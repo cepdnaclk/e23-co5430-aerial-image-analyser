@@ -25,6 +25,7 @@ This notebook contains the core machine learning logic.
 * **Architecture & Transfer Learning:** Implements the **U-Net** architecture using a pre-trained `resnet34` encoder (ImageNet weights) via `segmentation_models_pytorch`. This provides a massive head start in recognizing basic shapes and textures.
 * **Loss Function:** Optimized using a custom compound loss combining **Binary Cross Entropy (BCE)** (for pixel-level classification) and **Dice Loss** (to ensure the overall shape matches).
 * **Model Checkpointing:** Monitors validation Intersection over Union (IoU) and saves the best performing weights.
+* In this part, best_unet_resnet34.pth file is created and it is used for the part 4 final evaluation
 
 ### 4. Final Evaluation & Demo (`04-final-evaluation-and-demo.ipynb`)
 Evaluates the best trained U-Net model on the unseen Test Set (Tiles 31-36).
