@@ -73,7 +73,7 @@ def segment_aerial_image(input_img, threshold=0.5):
 
 # 4. Create & Launch UI
 with gr.Blocks(title="Aerial Image Infrastructure Analyser") as demo:
-    gr.Markdown("# 🛸 Aerial & Satellite Image Analyser\n### Infrastructure & Building Segmentation using U-Net")
+    gr.Markdown("# Aerial & Satellite Image Analyser\n### Infrastructure & Building Segmentation using U-Net")
     with gr.Row():
         with gr.Column():
             input_image = gr.Image(type="numpy", label="Upload Aerial Image")
